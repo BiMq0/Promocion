@@ -1,0 +1,185 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Overpass', sans-serif;
+}
+
+nav{
+    position: sticky;
+    top: 0;
+    height: 10vh;
+    background: white;
+}
+
+ul{
+    height: 10vh;
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: space-around;
+}
+
+li a{
+    text-decoration: none;
+    letter-spacing: 2px;
+    color: rgb(0,0,0);
+    font-size: 1.3em;
+    transition-duration: 0.3s;
+}
+
+li a:hover{
+    font-size: 1.5em;
+    color: rgb(70,90,180);
+}
+
+body{
+    background-color: #062872;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%23091191' points='800 100 0 200 0 800 1600 800 1600 200'/%3E%3Cpolygon fill='%232d0db0' points='800 200 0 400 0 800 1600 800 1600 400'/%3E%3Cpolygon fill='%236611ce' points='800 300 0 600 0 800 1600 800 1600 600'/%3E%3Cpolygon fill='%23ac19e9' points='1600 800 800 400 0 800'/%3E%3Cpolygon fill='%23e33aea' points='1280 800 800 500 320 800'/%3E%3Cpolygon fill='%23ec5bcd' points='533.3 800 1066.7 800 800 600'/%3E%3Cpolygon fill='%23EE7BB8' points='684.1 800 914.3 800 800 700'/%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.eventos__main{
+    padding-top: 2em;
+    height: 100vh;
+    color: white;
+}
+
+.eventos__pasados{
+    padding-top: 3em;
+    height: 50%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.event__title__container{
+    height: 25vh;
+    display: flex;
+}
+
+.event__title{
+    font-family: 'Righteous', cursive;
+    font-size: 18vh;
+    margin: auto;
+}
+
+.eventos__futuros{
+    height: 50%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.pasado h1{
+    color: rgb(0,255,255);
+    font-family: 'Righteous', cursive;
+    letter-spacing: 10px;
+    font-size: 8vh;
+}
+
+.pasado{
+    text-align: center;
+}
+
+.pasado span{
+    font-size: 4vh;
+    font-family: 'Kanit', sans-serif;
+}
+
+.future h1{
+    color: rgb(0,255,255);
+    font-family: 'Righteous', cursive;
+    letter-spacing: 10px;
+    font-size: 6vh;
+    padding-top: 1.5em;
+    font-family: 'Righteous', cursive;
+}
+
+.future{
+    text-align: center;
+}
+
+.future span{
+    font-size: 4vh;
+    font-family: 'Kanit';
+}
+
+.nav__button__container i {
+    position: absolute;
+    visibility: hidden;
+}
+
+@media screen and (max-width:550px){
+
+    .event__title{
+        font-size: 10vw;
+    }
+
+    .eventos__pasados{
+        padding-top: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .pasado h1{
+        font-size: 7vw;
+    }
+
+    .pasado span{
+        font-size: 4vw;
+    }
+
+    .eventos__futuros{
+        padding-top: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .future h1{
+        font-size: 7vw;
+    }
+
+    .future span{
+        font-size: 4vw;
+    }
+
+    nav{
+        top: -70vh;
+        height: 70vh;
+        position: fixed;
+        width: 100vw;
+        transition-duration: .6s;
+    }
+
+    .nav__button__container i{
+        font-size: 5vh;
+        margin: 15px;
+        visibility: visible;
+        position: fixed;
+        color: white;
+    }
+
+    header:hover > nav{
+        top: 0;
+    }
+
+    ul{
+        height: 70vh;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    li a{
+        color: white;
+        font-size: 4vw;
+        background: rgb(0,200,200);
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    li a:hover{
+        color: crimson;
+        font-size: 4vw;       
+    }
+}
