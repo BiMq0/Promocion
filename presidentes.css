@@ -8,6 +8,10 @@
 
 /*colores azul, marino y plomo plata (promo)
 colores rojo, blanco y rojo (colegio)*/
+header{
+    top: 0;
+    position: sticky;
+}
 
 nav{
     top: 0;
@@ -22,6 +26,17 @@ ul{
     list-style: none;
     align-items: center;
     justify-content: space-around;
+}
+
+.presidentes{
+    border: 2px solid black;
+    border-radius: 6px;
+    background-color: rgb(100,255,205);
+}
+
+li a{
+    padding: 10px;
+    text-decoration: none;
 }
 
 li a{
@@ -125,6 +140,10 @@ img{
         font-size: 3.5vh;
     }
     
+    .presidentes{
+        border: none;
+    }
+
     .dos{
         font-size: 3.5vh;
     }
@@ -156,6 +175,7 @@ img{
     }
 
     li a{
+        padding: none;
         color: white;
         font-size: 4vw;
         background: rgb(0,200,200);

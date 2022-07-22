@@ -4,6 +4,11 @@
     font-family: 'Overpass', sans-serif;
 }
 
+header{
+    position: sticky;
+    top: 0;
+}
+
 nav{
     position: sticky;
     top: 0;
@@ -19,11 +24,18 @@ ul{
     justify-content: space-around;
 }
 
+.eventos{
+    border: 2px solid black;
+    border-radius: 6px;
+    background-color: rgb(100,255,205);
+}
+
 li a{
+    padding: 10px;
     text-decoration: none;
     letter-spacing: 2px;
     color: rgb(0,0,0);
-    font-size: 1.3em;
+    font-size: 1.3rem;
     transition-duration: 0.3s;
 }
 
@@ -109,7 +121,6 @@ body{
 }
 
 @media screen and (max-width:550px){
-
     .event__title{
         font-size: 10vw;
     }
@@ -170,7 +181,12 @@ body{
         justify-content: space-evenly;
     }
 
+    .eventos{
+        border: none;
+    }
+
     li a{
+        padding: none;
         color: white;
         font-size: 4vw;
         background: rgb(0,200,200);

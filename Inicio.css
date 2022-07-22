@@ -22,11 +22,18 @@ ul{
     justify-content: space-around;
 }
 
+.inicio{
+    border: 2px solid black;
+    border-radius: 6px;
+    background-color: rgb(100,255,205);
+}
+
 li a{
+    padding: 10px;
     text-decoration: none;
     letter-spacing: 2px;
     color: rgb(0,0,0);
-    font-size: 1.7vw;
+    font-size: 1.3em;
     transition-duration: 0.3s;
 }
 
@@ -56,7 +63,7 @@ li a:hover{
     -webkit-background-clip: text;
 }
 
-.nav__button__container i {
+.nav__button__container i{
     position: absolute;
     visibility: hidden;
 }
@@ -97,7 +104,13 @@ li a:hover{
         justify-content: space-evenly;
     }
 
+    .inicio{
+        padding: 0;
+        border: none;
+    }
+
     li a{
+        padding: none;
         color: white;
         font-size: 4vw;
         background: rgb(0,200,200);
