@@ -33,16 +33,17 @@ li a{
     text-decoration: none;
     letter-spacing: 2px;
     color: rgb(0,0,0);
-    font-size: 1.3em;
+    font-size: 1.5vw;
     transition-duration: 0.3s;
 }
 
 li a:hover{
-    font-size: 4vh;
+    font-size: 1.8vw;
     color: rgb(70,90,180);
 }
 
 .index__main{
+    flex-direction: column;
     display: flex;
     height: 90vh;
     background-color: #0A1CAE;
@@ -50,17 +51,36 @@ li a:hover{
     background-attachment: fixed;
     background-size: cover;
     text-align: center;
-    align-items: flex-start;
 }
 
 .promo__index{
+    background: linear-gradient(30deg,white,white, gold, gold, white,white);
     letter-spacing: 15px;
-    background: linear-gradient(35deg,gold, gold, gold, rgb(255,255,80), rgb(180,180,180));
-    margin: auto;
-    color: white;
+    margin-top: 15vh;
     font-size: 9vw;
-    -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.by{
+    color: white ;
+    font-family: 'Righteous', cursive;
+    font-size: 3vw;
+}
+
+.by a{
+    border-radius: 10px;
+    transition-duration: .4s;
+    text-decoration: none;
+    color: white;
+    font-family: 'Righteous', cursive;
+}
+
+.by a:hover{
+    color: rgb(200,0,0);
+    font-size: 3.2vw;
+    padding: 0 10px;
+    box-shadow: 0 0 15px rgb(255,0,0);
 }
 
 .nav__button__container i{
@@ -70,11 +90,17 @@ li a:hover{
 
 @media screen and (max-width:550px){
     .promo__index{
+        margin-top: 35vh;
         font-size: 13vw;
         letter-spacing: 2px;
     }
 
+    .by{
+        font-size: 6vw;
+    }
+
     .index__main{
+        display: flex;
         height: 100vh;
     }
 
@@ -121,5 +147,9 @@ li a:hover{
     li a:hover{
         color: crimson;
         font-size: 4vw;       
+    }
+    .yo{
+        margin: 0;
+        font-size: 6vw;
     }
 }
