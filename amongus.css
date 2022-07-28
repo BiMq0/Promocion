@@ -141,7 +141,7 @@ span{
         font-size: 5vh;
         margin: 15px;
         visibility: visible;
-        position: fixed;
+        position: absolute;
         color: white;
     }
 

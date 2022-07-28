@@ -99,6 +99,13 @@ li a:hover{
         font-size: 6vw;
     }
 
+    .by a:hover{
+        color: rgb(200,0,0);
+        font-size: 7vw;
+        padding: 0 10px;
+        box-shadow: 0 0 15px rgb(255,0,0);
+    }
+
     .index__main{
         display: flex;
         height: 100vh;
@@ -116,7 +123,7 @@ li a:hover{
         font-size: 5vh;
         margin: 15px;
         visibility: visible;
-        position: fixed;
+        position: absolute;
         color: white;
     }
 
