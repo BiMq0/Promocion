@@ -48,29 +48,31 @@ body{
 
 .eventos__main{
     padding-top: 2em;
-    height: 100vh;
+    height: 80vh;
     color: white;
 }
 
 .eventos__pasados{
-    padding-top: 3em;
+    padding-top: 4em;
     height: 50%;
     display: flex;
     justify-content: space-evenly;
 }
 
 .event__title__container{
+    padding-top: 4vh;
     height: 25vh;
     display: flex;
 }
 
 .event__title{
     font-family: 'Righteous', cursive;
-    font-size: 18vh;
+    font-size: 15vh;
     margin: auto;
 }
 
 .eventos__futuros{
+    padding-bottom: 20em;
     height: 50%;
     display: flex;
     justify-content: space-evenly;
@@ -80,7 +82,7 @@ body{
     color: rgb(0,255,255);
     font-family: 'Righteous', cursive;
     letter-spacing: 10px;
-    font-size: 8vh;
+    font-size: 3vw;
 }
 
 .pasado{
@@ -88,7 +90,7 @@ body{
 }
 
 .pasado span{
-    font-size: 4vh;
+    font-size: 2vw;
     font-family: 'Kanit', sans-serif;
 }
 
@@ -128,7 +130,7 @@ body{
     }
 
     .pasado h1{
-        font-size: 7vw;
+        font-size: 6vw;
     }
 
     .pasado span{
@@ -162,7 +164,7 @@ body{
         font-size: 5vh;
         margin: 15px;
         visibility: visible;
-        position: absolute;
+        position: fixed;
         color: white;
     }
 

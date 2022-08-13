@@ -60,8 +60,8 @@ li a:hover{
     color: white;
     text-shadow: 0 0 20px black;
     margin: auto;
-    letter-spacing: 30px;
-    font-size: 25vh;
+    letter-spacing: 60px;
+    font-size: 10vw;
 }
 
 .asesor__main{
@@ -87,12 +87,8 @@ img{
     margin: auto;
     font-size: 3vw;
     font-family: 'Righteous', cursive;
-    text-shadow: 0 0 10px rgb(0,140,0);
 }
 
-.asesor1::first-line{
-    text-shadow: 0 0 10px rgb(255,0,0);
-}
 
 .asesor2::first-line{
     text-shadow: 0 0 10px rgb(255,0,0);
@@ -125,6 +121,14 @@ img{
 }
 
 @media screen and (max-width:550px){
+    .asesor1__container{
+        height: 25vh;
+    }
+
+    .asesor2__container{
+        height: 25vh;
+    }
+
     .titulo__container{
         height:100vh;
     }
@@ -189,5 +193,14 @@ img{
     li a:hover{
         color: crimson;
         font-size: 4vw;       
+    }
+    
+    .asesor__main{
+        height: 100vh;
+    }
+
+    img{
+        height: 8em;
+        width: 8em;
     }
 }
