@@ -34,8 +34,17 @@ li a{
     letter-spacing: 2px;
     color: rgb(0,0,0);
     font-size: 1.5vw;
+}
+
+li a{
+    padding: 10px;
+    text-decoration: none;
+    letter-spacing: 2px;
+    color: rgb(0,0,0);
+    font-size: 1.5vw;
     transition-duration: 0.3s;
 }
+
 
 li a:hover{
     font-size: 1.8vw;
